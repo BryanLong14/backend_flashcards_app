@@ -13,14 +13,13 @@
     "cors": "^2.8.4",
     "express": "^4.16.2",
     "knex": "^0.14.2",
-    "node": "^9.4.0",
+    "node": "^8.7.0",
     "pg": "^7.4.1",
     "psql": "^0.0.1"
   },
   "devDependencies": {
     "nodemon": "^1.14.11"
   },
-
   "author": "Bryan Long",
   "license": "ISC"
 }
