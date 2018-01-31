@@ -1,12 +1,9 @@
-
 exports.seed = function(knex, Promise) {
-  // Deletes ALL existing entries
   return knex('teachers_flashcards').del()
     .then(function () {
-      // Inserts seed entries
       return knex('teachers_flashcards').insert([
         {
-          "id": 93,
+          "id": 1,
           "word": "Example",
           "partOfSpeech": "Noun",
           "definition": "A thing characteristic of its kind; a pattern or model",
@@ -16,6 +13,6 @@ exports.seed = function(knex, Promise) {
       ]);
     })
     .then(() => {
-      return knex.raw("ALTER SEQUENCE teachers_flashcards_id_seq RESTART WITH 94;");
+      return knex.raw("ALTER SEQUENCE teachers_flashcards_id_seq RESTART WITH 2;");
     });
 };
