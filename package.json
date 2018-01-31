@@ -1,0 +1,17 @@
+{
+  "name": "flashcards_app",
+  "version": "1.0.0",
+  "description": "Flashcards App",
+  "main": "app.js",
+  "dependencies": {
+    "knex": "^0.14.2",
+    "pg": "^7.4.1",
+    "psql": "^0.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bryan Long",
+  "license": "ISC"
+}
