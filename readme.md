@@ -9,15 +9,26 @@
         2: I know this word, but don't have it memorized,
         3: I do not know the definition of this word
 
+
 2. User Inputted Words
 
+
+## Naming Conventions for Tower
+Database Name: flashcards_app
+Table 1 name: highschool_flashcards
+	singular: highschool_flashcard
+	seed: 01_highschool_flashcards
+
+Table 2 name: teachers_flashcards
+	singular: teachers_flashcard
+	seed: 01_teachers_flashcard
 
 
 ## Galvanize Tower Readme
 In this project, you'll build a full-stack application that has an API, reads and writes data, and uses a library. The topic is up to you!
 
-## Requirements
 
+## Requirements
 * Has an API that can list, read, update, create, and delete data
 * Has a database backing that API that has at least 2 different tables
 * Has a front-end that uses a application framework (React) or component library that:

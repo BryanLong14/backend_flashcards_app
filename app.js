@@ -75,14 +75,14 @@ app.post("/teachers_flashcards", (request, response) => {
     .catch(console.error);
 });
 
-// app.delete("/highschool_flashcards/:id", (request, response) => {
-//   queries
-//     .delete("highschool_flashcards", request.params.id)
-//     .then(() => {
-//       response.sendStatus(204);
-//     })
-//     .catch(console.error);
-// });
+app.delete("/highschool_flashcards/:id", (request, response) => {
+  queries
+    .delete("highschool_flashcards", request.params.id)
+    .then(() => {
+      response.sendStatus(204);
+    })
+    .catch(console.error);
+});
 
 app.delete("/teachers_flashcards/:id", (request, response) => {
   queries
@@ -93,14 +93,14 @@ app.delete("/teachers_flashcards/:id", (request, response) => {
     .catch(console.error);
 });
 
-// app.put("/highschool_flashcards/:id", (request, response) => {
-//   queries
-//     .update("highschool_flashcards", request.params.id, request.body)
-//     .then(highschool_flashcard => {
-//       response.json({ data: highschool_flashcard[0] });
-//     })
-//     .catch(console.error);
-// });
+app.put("/highschool_flashcards/:id", (request, response) => {
+  queries
+    .update("highschool_flashcards", request.params.id, request.body)
+    .then(highschool_flashcard => {
+      response.json({ data: highschool_flashcard[0] });
+    })
+    .catch(console.error);
+});
 
 app.put("/teachers_flashcards/:id", (request, response) => {
   queries
