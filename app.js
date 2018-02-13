@@ -4,6 +4,7 @@ const queries = require("./queries");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const devMode = process.env.NODE_ENV !== "production";
+const user = require("./users");
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -83,6 +84,23 @@ app.put("/teachers_flashcards/:id", (request, response, next) => {
     response.json({ data: teachers_flashcard[0] });
   })
   .catch(next);
+});
+
+app.post("/user", (request, response, next) => {
+  user.create(request.body.username)
+    .then(data => {
+      response.json({ data: data });
+    })
+    .catch(next);
+});
+
+app.get("/user", (request, response, next) => {
+  user
+    .list()
+    .then(data => {
+      response.json({ data: data });
+    })
+    .catch(next);
 });
 
 
