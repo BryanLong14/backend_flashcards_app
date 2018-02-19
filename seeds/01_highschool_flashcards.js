@@ -23,7 +23,7 @@ exports.seed = function(knex, Promise) {
           "id": 3,
           "word": "Abrogate",
           "partOfSpeech": "Verb",
-          "definition": "To abolish by authoritative action;",
+          "definition": "To abolish by authoritative action",
           "level": "High School",
           "synonyms": "Repeal, Annul, Dissolve, Abolish, Revoke"
         },
@@ -33,13 +33,13 @@ exports.seed = function(knex, Promise) {
           "partOfSpeech": "Adjective",
           "definition": "Marked by restraint esp from food or alcohol (abstain)",
           "level": "High School",
-          "synonyms": "Abstinent, Ascetic, Moderate, Restrained, Frugal"
+          "synonyms": "Restrained, Abstinent, Ascetic, Moderate, Frugal"
         },
         {
           "id": 5,
           "word": "Acumen",
           "partOfSpeech": "Noun",
-          "definition": "Keenness and depth of perception, discernment, or discrimination esp in practical matters",
+          "definition": "Keenness and depth of perception esp in practical matters",
           "level": "High School",
           "synonyms": "Astuteness, Acuity, Sharpness, Cleverness, Shrewdness"
         },
@@ -55,9 +55,9 @@ exports.seed = function(knex, Promise) {
           "id": 7,
           "word": "Auspicious",
           "partOfSpeech": "Adjective",
-          "definition": "Suggesting a likely future success; propitious; prosperous",
+          "definition": "Suggesting a likely future success",
           "level": "High School",
-          "synonyms": "Bright, Hopeful, Promising, Fortunate, Rosy"
+          "synonyms": "prosperous, Bright, Hopeful, Promising, Fortunate, Rosy"
         },
         {
           "id": 8,
@@ -65,7 +65,7 @@ exports.seed = function(knex, Promise) {
           "partOfSpeech": "Verb",
           "definition": "To give a false impression of or misrepresentation",
           "level": "High School",
-          "synonyms": "Deviate, Vary, Diverge, Depart"
+          "synonyms": "Disguise, Deviate, Vary, Diverge, Depart"
         },
         {
           "id": 9,
@@ -73,7 +73,7 @@ exports.seed = function(knex, Promise) {
           "partOfSpeech": "Adjective",
           "definition": "Favoring or inclined to start quarrels or wars",
           "level": "High School",
-          "synonyms": "Argumentative, Hostile, Quarrelsome, Combative, Agressive"
+          "synonyms": "Argumentative, Hostile, Quarrelsome, Combative, Aggressive"
         },
         {
           "id": 10,
@@ -87,7 +87,7 @@ exports.seed = function(knex, Promise) {
           "id": 11,
           "word": "Bowdlerize",
           "partOfSpeech": "Verb",
-          "definition": "To censor or abridge by omitting or modifying undesirable parts; to expurgate",
+          "definition": "To censor or abridge by omitting undesirable parts",
           "level": "High School",
           "synonyms": "Abridge, Foreshorten, Abbreviate, Shorten, Cut"
         },
@@ -95,9 +95,9 @@ exports.seed = function(knex, Promise) {
           "id": 12,
           "word": "Chicanery",
           "partOfSpeech": "Noun",
-          "definition": "Deception by artful subterfuge; trickery",
+          "definition": "Deception by artful subterfuge",
           "level": "High School",
-          "synonyms": "Artifice, Cheating, Deviousness, Dishonesty, Dodge"
+          "synonyms": "Trickery, Artifice, Cheating, Deviousness, Dishonesty, Dodge"
         },
         {
           "id": 13,
@@ -105,29 +105,29 @@ exports.seed = function(knex, Promise) {
           "partOfSpeech": "Noun",
           "definition": "Rod-shaped or threadlike dna-containing structures of cellular organisms that are located in the nucleus of eukaryotes, and contain all or most of the genes of an organism",
           "level": "High School",
-          "synonyms": "Dna, Genetic Material"
+          "synonyms": "DNA, Genetic Material"
         },
         {
           "id": 14,
           "word": "Churlish",
           "partOfSpeech": "Adjective",
-          "definition": "Marked by lack of civility or graciousness; surly; intractable resembling a churl ie vulgarity ",
+          "definition": "Marked by lack of civility or graciousness",
           "level": "High School",
-          "synonyms": "Boorish, Classless, Cloddish, Loutish, Uncouth"
+          "synonyms": "Boorish, Surly, Classless, Cloddish, Loutish, Uncouth"
         },
         {
           "id": 15,
           "word": "Circumlocution",
           "partOfSpeech": "Noun",
-          "definition": "The use of an unnecessarily large number of words to express an idea; evasion in speech going-around style of speaking",
+          "definition": "The use of an unnecessarily large number of words to express an idea",
           "level": "High School",
-          "synonyms": "Equivocation, Ambiguity, Obscurity"
+          "synonyms": "Ambiguity, Equivocation, Obscurity"
         },
         {
           "id": 16,
           "word": "Circumnavigate",
           "partOfSpeech": "Verb",
-          "definition": "To go completely around (like traveling around earth by water); to go around instead of through ",
+          "definition": "To go completely around (like traveling around the earth by water); to go around instead of through ",
           "level": "High School",
           "synonyms": "Circle, Circuit, Circumvent, Orbit, Go Around"
         },
@@ -151,7 +151,7 @@ exports.seed = function(knex, Promise) {
           "id": 19,
           "word": "Diffident",
           "partOfSpeech": "Adjective",
-          "definition": "Hesitant in acting or speaking through lack of self-confidence; shy; reserved",
+          "definition": "Hesitant in acting or speaking through lack of self-confidence",
           "level": "High School",
           "synonyms": "Shy, Bashful, Modest, Self-Effacing, Meek"
         },
@@ -159,7 +159,7 @@ exports.seed = function(knex, Promise) {
           "id": 20,
           "word": "Enervate",
           "partOfSpeech": "Verb",
-          "definition": "To reduce the mental or moral vigor of; to lessen the vitality or strength of; unnerve",
+          "definition": "To reduce the mental or moral vigor of; to lessen the vitality or strength of",
           "level": "High School",
           "synonyms": "Exhaust, Tire, Fatigue, Weary, Wear Out"
         },
@@ -167,7 +167,7 @@ exports.seed = function(knex, Promise) {
           "id": 21,
           "word": "Enfranchise",
           "partOfSpeech": "Verb",
-          "definition": "To set free; to admit privilege or right",
+          "definition": "To set free; to give rights (esp voting rights)",
           "level": "High School",
           "synonyms": "Liberate, Free, Emancipate"
         },
@@ -175,7 +175,7 @@ exports.seed = function(knex, Promise) {
           "id": 22,
           "word": "Epiphany",
           "partOfSpeech": "Noun",
-          "definition": "A usually sudden manifestation or perception of the essential nature or meaning of something; a sudden realization",
+          "definition": "A usually sudden perception of the essential nature or meaning of something; a sudden realization",
           "level": "High School",
           "synonyms": "Realization, Flash, Revelation"
         },
@@ -183,7 +183,7 @@ exports.seed = function(knex, Promise) {
           "id": 23,
           "word": "Equinox",
           "partOfSpeech": "Noun",
-          "definition": "Either of two times a year (around march 21 and september 23) where the sun crosses the equator and day and night are about the same length",
+          "definition": "Either of two times a year (around March 21 and September 23) where the sun crosses the equator and day and night are about the same length",
           "level": "High School",
           "synonyms": "No synonyms"
         },
@@ -191,9 +191,9 @@ exports.seed = function(knex, Promise) {
           "id": 24,
           "word": "Euro",
           "partOfSpeech": "Noun",
-          "definition": "The common basic monetary unit of most countries of the european union",
+          "definition": "The common basic monetary unit of most countries of the European Union",
           "level": "High School",
-          "synonyms": "No synonyms"
+          "synonyms": "Money"
         },
         {
           "id": 25,
