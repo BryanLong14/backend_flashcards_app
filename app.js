@@ -70,24 +70,25 @@ app.post("/teachers_flashcards/", (request, response, next) => {
 
 app.delete("/teachers_flashcards/:id", (request, response, next) => {
   queries
-  .delete("teachers_flashcards", request.params.id)
-  .then(() => {
-    response.sendStatus(204);
-  })
-  .catch(next);
+    .delete("teachers_flashcards", request.params.id)
+    .then(() => {
+      response.sendStatus(204);
+    })
+    .catch(next);
 });
 
 app.put("/teachers_flashcards/:id", (request, response, next) => {
   queries
-  .update("teachers_flashcards", request.params.id, request.body)
-  .then(teachers_flashcard => {
-    response.json({ data: teachers_flashcard[0] });
-  })
-  .catch(next);
+    .update("teachers_flashcards", request.params.id, request.body)
+    .then(teachers_flashcard => {
+      response.json({ data: teachers_flashcard[0] });
+    })
+    .catch(next);
 });
 
 app.post("/user", (request, response, next) => {
-  user.create(request.body.username)
+  user
+    .create(request.body.username)
     .then(data => {
       response.json({ data: data });
     })
@@ -103,56 +104,26 @@ app.get("/user", (request, response, next) => {
     .catch(next);
 });
 
-
-// app.post("/highschool_flashcards", (request, response, next) => {
-//   queries
-//     .create("highschool_flashcards", request.body)
-//     .then(highschool_flashcard => {
-  //       response.status(201).json({ data: highschool_flashcard });
-  //     })
-  //     .catch(next);
-  // });
-  
-// app.delete("/highschool_flashcards/:id", (request, response, next) => {
-//   queries
-//     .delete("highschool_flashcards", request.params.id)
-//     .then(() => {
-  //       response.sendStatus(204);
-  //     })
-  //     .catch(next);
-  // });
-  
-// app.put("/highschool_flashcards/:id", (request, response, next) => {
-  //   queries
-  //     .update("highschool_flashcards", request.params.id, request.body)
-  //     .then(highschool_flashcard => {
-    //       response.json({ data: highschool_flashcard[0] });
-    //     })
-    //     .catch(next);
-    // });
-            
 app.use(notFound);
 app.use(errorHandler);
 
 function notFound(req, res, next) {
   const url = req.originalUrl;
   if (!/favicon\.ico$/.test(url) && !/robots\.txt$/.test(url)) {
-    // Don"t log less important auto requests
     console.error("[404: Requested file not found] ", url);
-    return res.status(200).send({message: "url path not found"});
+    return res.status(200).send({ message: "url path not found" });
   }
-  res.status(404).send({error: "Url not found", status: 404, url});
+  res.status(404).send({ error: "Url not found", status: 404, url });
 }
 
 function errorHandler(err, req, res, next) {
   console.error("ERROR", err);
-  const stack =  devMode ? err.stack : undefined;
+  const stack = devMode ? err.stack : undefined;
   res.status(500).send({
     error: err.message,
     url: req.originalUrl,
-    stack,
+    stack
   });
 }
 
 module.exports = app;
-            
